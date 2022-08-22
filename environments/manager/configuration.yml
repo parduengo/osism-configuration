@@ -29,12 +29,12 @@ netbox_api_url: "http://192.168.10.16:1080/netbox"
 
 configuration_directory: /opt/configuration
 
-#configuration_type: git
-#configuration_git_version: main
-#configuration_git_host: github.com
-#configuration_git_port: 443
-#configuration_git_repository: osism/gaia-x-hackathon-2021.git
-#configuration_git_protocol: https
+configuration_type: git
+configuration_git_version: main
+configuration_git_host: github.com
+configuration_git_port: 443
+configuration_git_repository: parduengo/osism-configuratio.git
+configuration_git_protocol: https
 
 ##########################
 # NOTE: Workaround to be able to use Zun in AIO installation
