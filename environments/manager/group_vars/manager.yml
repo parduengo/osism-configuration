@@ -23,8 +23,8 @@ netbox_inventory_device_role: generic
 ##########################################################
 # network
 
-network_mgmt_interface: enp0s1
-network_workload_interface: enp0s2
+network_mgmt_interface: eth0
+network_workload_interface: eth1
 
 network_type: netplan
 
@@ -37,8 +37,9 @@ network_ethernets:
   "{{ network_mgmt_interface }}":
     addresses:
       - "{{ network_mgmt_network | ipaddr('net') | ipaddr(node_id) | ipaddr('address') }}/{{ network_mgmt_network_subnet_mask }}"
-    gateway4: "{{ network_mgmt_network | ipaddr('net') | ipaddr('1') | ipaddr('address') }}"
-  "{{ network_workload_interface }}": {}
+    #gateway4: "{{ network_mgmt_network | ipaddr('net') | ipaddr('1') | ipaddr('address') }}"
+  "{{ network_workload_interface }}":
+    dhcp4: true
 
 network_vlans:
   vlan100:
