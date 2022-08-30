@@ -2,8 +2,8 @@
 ##########################################################
 # network
 
-network_mgmt_interface: enp0s1
-network_workload_interface: enp0s2
+network_mgmt_interface: eth0
+network_workload_interface: eth1
 
 network_type: netplan
 
