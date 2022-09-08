@@ -16,3 +16,15 @@ devices:
   # - /dev/sdc
   # - /dev/sdd
   # - /dev/sde
+
+##########################
+# kolla
+
+# network_interface: eth0
+# storage_interface: eth1
+# tunnel_interface: eth2
+# api_interface: eth3
+
+# neutron_external_interface: eth4
+# kolla_external_vip_interface: eth5
+# eth0:1 OR eth0:2 ->> for ip aliasing in multipass VM.
